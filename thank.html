@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="login.css">
+
+    <style>
+        .form {
+            display: block;
+            margin-top: 0em;
+        }
+    </style>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Online It Store</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#myPage">HOME</a></li>
+                    <li><a href="#band">PRODUCT</a></li>
+                    <li><a href="#tour">TROLLEY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <form action="home.html">
+
+            <div class="item-detail-text">
+                <h2 style="text-align:center"><strong>
+                    <font size="6" color="black">Online It Store</font>
+                </strong></h2>
+                    <p style="text-align:center"><img alt=""
+                            src="https://c.tenor.com/wod_ljXc5iQAAAAj/milk-and-mocha-cute.gif"
+                            style="width:100%">
+                    </p>
+                    <br>
+                    <h2 style="text-align:center"><strong>
+                        <font size="6" color="red">ขอขอบคุณที่ซื้อสินค้ากับเรา!</font>
+                        <p>ยินดีให้คำปรึกกับลูกค้าทุกคน</p>
+                    </strong></h2>
+
+
+                    <br>
+            </div>
+
+            <input type="submit" value="ซื้อสินค้าต่อ" class="btn">
+
+
+
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <footer class="text-center">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <p>ยินดีต้อนรับเข้าสู่ Online It Store</p>
+    </footer>
+
+    <script>
+
+        var modal = document.getElementById('id01');
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

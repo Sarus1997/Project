@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="login.css">
+
+  <style>
+    .form {
+      display: block;
+      margin-top: 0em;
+    }
+  </style>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage">Online It Store</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#myPage">HOME</a></li>
+          <li><a href="#band">PRODUCT</a></li>
+          <li><a href="#tour">TROLLEY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <form action="thank.html">
+    <div class="row">
+      <div class="container">
+        <h2 class="text-center"><font color="red">แบบฟอร์มการชำระเงิน</font></h2>
+        <hr>
+
+        <div class="form-row">
+          <p>ชื่อ*</p>
+            <input type="text" id="fname" name="firstname" placeholder="ชื่อ">
+            <p>นามสกุล*</p>
+            <input type="text" id="fname" name="firstname" placeholder="นามสกุล">
+            <p>Email*</p>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <p>ที่อยู่*</p>
+            <input type="text" id="adr" name="address" placeholder="บ้านเลขที่">
+            <input type="text" id="adr" name="address" placeholder="หมู่ที่">
+            <input type="text" id="adr" name="address" placeholder="ซอย">
+            <input type="text" id="adr" name="address" placeholder="ถนน">
+            <input type="text" id="adr" name="address" placeholder="ตำบบ">
+            <input type="text" id="adr" name="address" placeholder="อำเภอ">
+            
+            <label for="sel1">จังหวัด*</label>
+            <select class="form-control" required id="province">
+              <option value="null">...</option>
+              <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+              <option value="กระบี่">กระบี่ </option>
+              <option value="กาญจนบุรี">กาญจนบุรี </option>
+              <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+              <option value="กำแพงเพชร">กำแพงเพชร </option>
+              <option value="ขอนแก่น">ขอนแก่น</option>
+              <option value="จันทบุรี">จันทบุรี</option>
+              <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+              <option value="ชัยนาท">ชัยนาท </option>
+              <option value="ชัยภูมิ">ชัยภูมิ </option>
+              <option value="ชุมพร">ชุมพร </option>
+              <option value="ชลบุรี">ชลบุรี </option>
+              <option value="เชียงใหม่">เชียงใหม่ </option>
+              <option value="เชียงราย">เชียงราย </option>
+              <option value="ตรัง">ตรัง </option>
+              <option value="ตราด">ตราด </option>
+              <option value="ตาก">ตาก </option>
+              <option value="นครนายก">นครนายก </option>
+              <option value="นครปฐม">นครปฐม </option>
+              <option value="นครพนม">นครพนม </option>
+              <option value="นครราชสีมา">นครราชสีมา </option>
+              <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+              <option value="นครสวรรค์">นครสวรรค์ </option>
+              <option value="นราธิวาส">นราธิวาส </option>
+              <option value="น่าน">น่าน </option>
+              <option value="นนทบุรี">นนทบุรี </option>
+              <option value="บึงกาฬ">บึงกาฬ</option>
+              <option value="บุรีรัมย์">บุรีรัมย์</option>
+              <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+              <option value="ปทุมธานี">ปทุมธานี </option>
+              <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+              <option value="ปัตตานี">ปัตตานี </option>
+              <option value="พะเยา">พะเยา </option>
+              <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+              <option value="พังงา">พังงา </option>
+              <option value="พิจิตร">พิจิตร </option>
+              <option value="พิษณุโลก">พิษณุโลก </option>
+              <option value="เพชรบุรี">เพชรบุรี </option>
+              <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+              <option value="แพร่">แพร่ </option>
+              <option value="พัทลุง">พัทลุง </option>
+              <option value="ภูเก็ต">ภูเก็ต </option>
+              <option value="มหาสารคาม">มหาสารคาม </option>
+              <option value="มุกดาหาร">มุกดาหาร </option>
+              <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+              <option value="ยโสธร">ยโสธร </option>
+              <option value="ยะลา">ยะลา </option>
+              <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+              <option value="ระนอง">ระนอง </option>
+              <option value="ระยอง">ระยอง </option>
+              <option value="ราชบุรี">ราชบุรี</option>
+              <option value="ลพบุรี">ลพบุรี </option>
+              <option value="ลำปาง">ลำปาง </option>
+              <option value="ลำพูน">ลำพูน </option>
+              <option value="เลย">เลย </option>
+              <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+              <option value="สกลนคร">สกลนคร</option>
+              <option value="สงขลา">สงขลา </option>
+              <option value="สมุทรสาคร">สมุทรสาคร </option>
+              <option value="สมุทรปราการ">สมุทรปราการ </option>
+              <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+              <option value="สระแก้ว">สระแก้ว </option>
+              <option value="สระบุรี">สระบุรี </option>
+              <option value="สิงห์บุรี">สิงห์บุรี </option>
+              <option value="สุโขทัย">สุโขทัย </option>
+              <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+              <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+              <option value="สุรินทร์">สุรินทร์ </option>
+              <option value="สตูล">สตูล </option>
+              <option value="หนองคาย">หนองคาย </option>
+              <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+              <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+              <option value="อุดรธานี">อุดรธานี </option>
+              <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+              <option value="อุทัยธานี">อุทัยธานี </option>
+              <option value="อุบลราชธานี">อุบลราชธานี</option>
+              <option value="อ่างทอง">อ่างทอง </option>
+            </select>
+        </div>
+
+        <div class="row">
+          <p style="text-center">รหัสไปรษณีย์*</p>
+          <input type="text" id="zip" name="zip" placeholder="10001">
+        </div>
+
+        <div class="form-row">
+          <h2><font color="red">การชำระเงิน</font></h2>
+          <hr>
+          <label for="bank">เลือกธนาคาร</label>
+          <select class="form-control" id="bank" pattern="ธนาคาร">
+            <option value="กรุงไทย">กรุงไทย</option>
+            <option value="ไทยพาณิชย์">ไทยพาณิชย์</option>
+            <option value="ธนาคารกรุงเทพ">ธนาคารกรุงเทพ</option>
+            <option value="กรุงไทย">กรุงไทย</option>
+            <option value="กสิกรไทย">กสิกรไทย</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="cname">ชื่อผู้ถือบัรต</label>
+          <input type="text" id="cname" name="cardname" placeholder="ประยุทธ์ จันทร์โอชา">
+          <label for="ccnum">หมายเลขบัตรเครดิต</label>
+          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+          <label for="expmonth">เลขหน้าบัตร</label>
+          <input type="text" id="expmonth" name="expmonth" placeholder="1100">
+          <label for="expyear">วันหมดอายุ</label>
+          <input type="text" id="expyear" name="expyear" placeholder="11/18">
+          <label for="cvv">เลขหลังบัตร/CVV</label>
+          <input type="text" id="cvv" name="cvv" placeholder="352">
+        </div>
+
+        <div class="col">
+          <label><input type="checkbox" checked="checked" name="sameadr"> ที่อยู่จัดส่งเดียวกับใบเรียกเก็บเงิน</label>
+          <hr>
+        </div>
+
+        <input type="submit" value="ดำเนินการชำระเงิน" class="btn">
+        <div class="col">
+          <div class="container"><br>
+            <h2>รถเข็น <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i><b>4</b></span></h4>
+              <p><a href="#">สินค้าที่ 1</a> <span class="price">$15</span></p>
+              <p><a href="#">สินค้าที่ 2</a> <span class="price">$5</span></p>
+              <p><a href="#">สินค้าที่ 3</a> <span class="price">$8</span></p>
+              <p><a href="#">สินค้าที่ 4</a> <span class="price">$2</span></p>
+              <hr>
+              <h2>ยอดรวม <span class="price" style="color:black"><b>$30</b></span></h4>
+          </div>
+        </div>
+
+        </center>
+      </div>
+  </form>
+  <br>
+  <br>
+  <br>
+
+
+  <footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>ยินดีต้อนรับเข้าสู่ Online It Store</p>
+  </footer>
+
+  <script>
+
+    var modal = document.getElementById('id01');
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
